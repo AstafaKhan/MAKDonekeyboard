@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MAKDonekeyboard_Example' do
+  pod 'MAKDonekeyboard', :path => '../'
+
+  target 'MAKDonekeyboard_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 2.2.0'
+    pod 'Nimble', '~> 8.0.7'
+  end
+end
